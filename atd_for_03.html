@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03</title>
+</head>
+
+<body>
+    
+    <h1>Exercicio 03</h1>
+    <div id="resultado"></div>
+    <div id="resultado2"></div>
+    <div id="resultado3"></div>
+    <div id="resultado4"></div>
+    <div id="resultado5"></div>
+    <div id="resultado6"></div>
+    <div id="resultado7"></div>
+    <div id="resultado8"></div>
+    <div id="resultado9"></div>
+    <div id="resultado10"></div>
+    <div id="resultado11"></div>
+    <div id="silvio"></div>
+    <div id="silvio2"></div>  
+
+
+
+    <script>
+      
+        let resul = ""
+        let resul2 = ""
+        let resul3 = ""
+        let resul4 = ""
+        let resul5 = ""
+        let resul7 = ""
+        let resul8 = ""
+        let resul9 = ""
+        let resul10 = ""
+        let resul11 = ""
+
+        for (let a = 1; a <= 45; a++) {
+            for (let b = 1; b <= 10; b++) {
+                if (calc = 3 & a == 1 & b == 2) {
+                    calc = 3
+                    resul += calc + " (soma do numero " + a + " com o número " + b + ")" + "</br>"
+                }
+                calc = Number(a + b)
+                
+                if (calc == 6 & b == 3){
+                    resul2 += calc + " (soma parcial com o número "+ b + ")"
+                }
+                
+                if (calc == 10 & b == 4) {
+                    resul3 += calc + " (soma parcial com o número "+ b + ")"
+                    
+                }
+
+                if (calc == 15 & b == 5){
+
+                    resul4  = calc + " (soma parcial com o número "+ b + ")"
+                }
+
+                if (calc == 21 & b == 6){
+
+                    resul5 = calc + " (soma parcial com o número "+ b + ")"
+                    
+                }                
+                if ( calc == 28 & b == 7 ){
+            
+                    resul6 = calc + " (soma parcial com o número " + b +")"
+                }
+                if(calc == 36 & b == 8){
+                    resul7 = calc + " (soma parcial com o número " + b + ")"
+                
+                }
+                if(calc == 45 & b == 9){
+                    resul9 = calc + "(soma parcial com o número " + b + ")"
+                }
+                if(calc == 55 & b == 10)
+                    resul10 = calc +"(soma parcial com o número "+ b +" )"
+                    resul11 = "Soma total <-" + calc
+                    console.log(calc)
+                }
+
+
+            }
+        
+        
+        document.getElementById("resultado").innerHTML =  resul
+        document.getElementById("resultado2").innerHTML = resul2
+        document.getElementById("resultado3").innerHTML = resul3
+        document.getElementById("resultado4").innerHTML = resul4
+        document.getElementById("resultado5").innerHTML = resul5
+        document.getElementById("resultado6").innerHTML = resul6
+        document.getElementById("resultado7").innerHTML = resul7 
+        document.getElementById("resultado8").innerHTML = resul8
+        document.getElementById("resultado9").innerHTML = resul9
+        document.getElementById("resultado10").innerHTML = resul10
+        document.getElementById("resultado11").innerHTML = resul11
+
+        //explicação
+
+        let soma =3;
+        let numero = ""
+            for (let index = 3; index <=10; index++) {
+                soma += index;
+                numero += soma + "(soma parcial com o número " + index + ") <br>"   
+                document.getElementById("silvio2").innerHTML="3 (soma do número 1 com o número 2)"
+                document.getElementById("silvio").innerHTML = numero
+
+                
+            }
+
+
+
+        
+    </script>
+
+</body>
+
+</html>
